@@ -8,7 +8,8 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
-  frente_seg(80, 5000);
+  frente_seg(255, 2000);
+  delay(10000);
 
 }
 void frente_seg(int vel, int seg) {
