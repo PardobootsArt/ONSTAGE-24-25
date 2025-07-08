@@ -33,7 +33,7 @@ void loop() {
       digitalWrite(luaLED, HIGH);
       AcionarSol('E', 50, 700);
       delay(1000);
-      AcionarLua('E', 80, 1000);
+      AcionarLua('E', 80, 1600);
     }
     else if (reconhecimento == 3) { // Condição caso o contador do reconhecimento de imagem envie "4"
       digitalWrite(solLED, LOW);

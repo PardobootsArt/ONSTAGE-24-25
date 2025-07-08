@@ -30,12 +30,16 @@ void loop()
   Serial.println(dist);
 
   // Controle do LED baseado na distância
-  if (dist < 35) {
-    analogWrite(Led, 255);
-    delay(2000);// Acende LED com brilho máximo
-  } else {
-    analogWrite(Led, 0);   // Apaga o LED
+  if (dist < 15) {
+    while(true){
+      for (int i = 0; i <= 255; i++) {
+          analogWrite(Led, i);
+          delay(10); }
+      for (int i = 255; i >= 0; i--) {
+          analogWrite(Led, i);
+          delay(10); }
+      delay(300);
+    }
   }
-
   delay(200); // Pequeno atraso para estabilidade da leitura
 }
