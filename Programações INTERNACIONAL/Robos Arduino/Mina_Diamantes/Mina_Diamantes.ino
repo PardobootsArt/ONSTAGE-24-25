@@ -30,7 +30,7 @@ void loop()
   Serial.println(dist);
 
   // Controle do LED baseado na distância
-  if (dist < 15) {
+  if (dist < 25) {
     while(true){
       for (int i = 0; i <= 255; i++) {
           analogWrite(Led, i);
